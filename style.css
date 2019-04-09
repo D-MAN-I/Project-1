@@ -11,29 +11,44 @@
     
 }
 
+.container
+{
+    display: flex;
+    /* flex-wrap: nowrap; */
+
+}
+.container > div {
+    height: 50px;
+    width: 170px;
+    background-color: grey;
+    border: solid rgba(255, 255, 0, 0.885) 5px;
+    text-align: center;
+    
+}
+
 .Cat1 > div{
     height: 100px;
     width: 170px;
-    border: solid gray 5px;
+    border: solid rgb(167, 35, 26) 5px;
 }
 
 .Cat2 > div{
     height: 100px;
     width: 170px;
-    border: solid gray 5px;
+    border: solid rgb(167, 35, 26) 5px;
 }
 .Cat3 > div{
     height: 100px;
     width: 170px;
-    border: solid gray 5px;
+    border: solid rgb(167, 35, 26) 5px;
 }
 .Cat4 > div{
     height: 100px;
     width: 170px;
-    border: solid gray 5px;
+    border: solid rgb(167, 35, 26) 5px;
 }
 .Cat5 > div{
     height: 100px;
     width: 170px;
-    border: solid gray 5px;
+    border: solid rgb(167, 35, 26) 5px;
 }
