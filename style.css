@@ -1,11 +1,39 @@
-body {
-    background-color: yellow;
-}
+/* body {
+    
+} */
 
 
 #gameboard {
     background-color: blue;
-    display: inline-block
+    display: inline-flex;  
+    flex-basis: 80vh;
+    margin: auto;
     
-    
+}
+
+.Cat1 > div{
+    height: 100px;
+    width: 170px;
+    border: solid gray 5px;
+}
+
+.Cat2 > div{
+    height: 100px;
+    width: 170px;
+    border: solid gray 5px;
+}
+.Cat3 > div{
+    height: 100px;
+    width: 170px;
+    border: solid gray 5px;
+}
+.Cat4 > div{
+    height: 100px;
+    width: 170px;
+    border: solid gray 5px;
+}
+.Cat5 > div{
+    height: 100px;
+    width: 170px;
+    border: solid gray 5px;
 }
