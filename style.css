@@ -13,6 +13,17 @@
     
 }
 
+.answers {
+    background-color: blue;
+    display: inline-flex;  
+    flex-basis: 80vh;
+    margin: auto;
+    height: 527px;
+    width: 880px
+    
+
+}
+
 .container
 {
     display: inline-flex;
@@ -64,4 +75,10 @@
     border: solid rgb(167, 35, 26) 3px;
     text-align: center;
     color: white;
+    
+}
+
+#value {
+    color: white;
+    text-decoration: none;
 }
