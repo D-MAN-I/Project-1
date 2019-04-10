@@ -2,10 +2,15 @@
     
 } */
 
+h1 {
+    text-align: center;
+    
+
+}
 
 #gameboard {
     background-color: blue;
-    display: inline-flex;  
+    display: flex;  
     flex-basis: 80vh;
     margin: auto;
     height: 527px;
@@ -26,16 +31,21 @@
 
 .container
 {
-    display: inline-flex;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
     /* flex-wrap: nowrap; */
 
 }
 .container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 50px;
     width: 170px;
     background-color: grey;
     border: solid rgba(255, 255, 0, 0.885) 3px;
-    text-align: center;
+    /* text-align: center; */
     color: white;
     
 }
@@ -46,6 +56,9 @@
     border: solid rgb(167, 35, 26) 3px;
     text-align: center;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .Cat2 > div{
@@ -54,6 +67,9 @@
     border: solid rgb(167, 35, 26) 3px;
     text-align: center;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .Cat3 > div{
     height: 100px;
@@ -61,6 +77,9 @@
     border: solid rgb(167, 35, 26) 3px;
     text-align: center;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .Cat4 > div{
     height: 100px;
@@ -68,6 +87,9 @@
     border: solid rgb(167, 35, 26) 3px;
     text-align: center;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .Cat5 > div{
     height: 100px;
@@ -75,10 +97,17 @@
     border: solid rgb(167, 35, 26) 3px;
     text-align: center;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 
-#value {
+#points {
     color: white;
     text-decoration: none;
+}
+
+#points:hover {
+    color: gold;
 }
