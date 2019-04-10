@@ -8,12 +8,14 @@
     display: inline-flex;  
     flex-basis: 80vh;
     margin: auto;
+    height: 527px;
+    width: 880px
     
 }
 
 .container
 {
-    display: flex;
+    display: inline-flex;
     /* flex-wrap: nowrap; */
 
 }
@@ -21,34 +23,45 @@
     height: 50px;
     width: 170px;
     background-color: grey;
-    border: solid rgba(255, 255, 0, 0.885) 5px;
+    border: solid rgba(255, 255, 0, 0.885) 3px;
     text-align: center;
+    color: white;
     
 }
 
 .Cat1 > div{
     height: 100px;
     width: 170px;
-    border: solid rgb(167, 35, 26) 5px;
+    border: solid rgb(167, 35, 26) 3px;
+    text-align: center;
+    color: white;
 }
 
 .Cat2 > div{
     height: 100px;
     width: 170px;
-    border: solid rgb(167, 35, 26) 5px;
+    border: solid rgb(167, 35, 26) 3px;
+    text-align: center;
+    color: white;
 }
 .Cat3 > div{
     height: 100px;
     width: 170px;
-    border: solid rgb(167, 35, 26) 5px;
+    border: solid rgb(167, 35, 26) 3px;
+    text-align: center;
+    color: white;
 }
 .Cat4 > div{
     height: 100px;
     width: 170px;
-    border: solid rgb(167, 35, 26) 5px;
+    border: solid rgb(167, 35, 26) 3px;
+    text-align: center;
+    color: white;
 }
 .Cat5 > div{
     height: 100px;
     width: 170px;
-    border: solid rgb(167, 35, 26) 5px;
+    border: solid rgb(167, 35, 26) 3px;
+    text-align: center;
+    color: white;
 }
