@@ -15,10 +15,10 @@ console.log("Hello World")
 
 let panelDetect = document.querySelectorAll(".points")
 console.log(panelDetect)
-this.addEventListener('click', function() {
+this.addEventListener('click', function(event) {
 
     // let panelDetect = document.this.getAttribute("class").split(' ')[1]
-    console.log(this.id)
+    console.log(event.target.id)
 })
 
 // console.log(document.getElementsByClassName("points")[0])
