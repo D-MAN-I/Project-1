@@ -5,9 +5,57 @@ console.log("Hello World")
 /*Category locations on gameboard are fixed. Knowing the category location (i.e., Cat1 - Cat5) and point value (100 - 500)
  will indicate location on the board (i.e, row and column).  For example row 2 column 2 is same as Cat2, 200 pts.*/
 
- //The 'data structure' would include multiple arrays containing [answers], [questionResponses], and [pointValues] (amongst others TBD)
+//When user or player clicks (for example) the panal for Cat1-100pts, the gameboard should disappear and an answer related to the category should appear.
 
- //When user or player clicks (for example) the panal for Cat1-100pts, the gameboard should disappear and an answer related to the category should appear.
+
+//step 1
+//let panelDetect = document.getElementsByClassName("points")
+
+//step 2 - event listener, add click button to each square on the board
+
+let panelDetect = document.querySelectorAll(".points")
+console.log(panelDetect)
+this.addEventListener('click', function() {
+
+    // let panelDetect = document.this.getAttribute("class").split(' ')[1]
+    console.log(this.id)
+})
+
+// console.log(document.getElementsByClassName("points")[0])
+
+ //The 'data structure' would include multiple arrays containing [answers], [questionResponses], and [pointValues] (amongst others TBD)
+let categoryObj = {
+    cat1: {
+        answers: ['a', 'b', 'c', 'd', 'e'],
+        questionResponses: ['f', 'g', 'h', 'i', 'j'],
+        pointValues: [100, 200, 300, 400, 500]
+    },
+
+    cat2: {
+        answers: ['aa', 'bb', 'cc', 'dd', 'ee'],
+        questionResponses: ['ff', 'gg', 'hh', 'ii', 'jj'],
+        pointValues: [100, 200, 300, 400, 500]
+    },
+
+    cat3: {
+        answers: ['aaa', 'bbb', 'ccc', 'ddd', 'eee'],
+        questionResponses: ['fff', 'ggg', 'hhh', 'iii', 'jjj'],
+        pointValues: [100, 200, 300, 400, 500]
+    },
+
+    cat4: {
+        answers: ['aaaa', 'bbbb', 'cccc', 'dddd', 'eeee'],
+        questionResponses: ['ffff', 'gggg', 'hhhh', 'iiii', 'jjjj'],
+        pointValues: [100, 200, 300, 400, 500]
+    },
+
+    cat5: {
+        answers: ['aaaaa', 'bbbbb', 'ccccc', 'ddddd', 'eeeee'],
+        questionResponses: ['fffff', 'ggggg', 'hhhhh', 'iiiii', 'jjjjj'],
+        pointValues: [100, 200, 300, 400, 500]
+    }
+}
+ 
 
  //Then, user will need to 'input' a question-response.
 
