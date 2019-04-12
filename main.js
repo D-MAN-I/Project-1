@@ -19,8 +19,22 @@ this.addEventListener('click', function (event) {
 
     let panelClick = event.target.id
 
-    console.log(panelClick)
+    
+        $( ".points" ).click(function(event) {
+            var target = $(event.target);
+            if ( target.is( ".points" ) ) {
+            let pClass = target.parent().attr('class');
+            console.log(pClass)
+
+            console.log(panelClick)
+            }
+            
+          })
+    
+    
 })
+
+
 
 // Get modal element
 let modal = document.querySelector('.simpleModal')
@@ -33,10 +47,10 @@ let closeBtn = document.getElementsByClassName('closeBtn')[0]
 
 let div = document.querySelectorAll('.points')[0]
 
-// Listen for open click
+// //Listen for open click
 // div.addEventListener("click", function() {
 //     modal.style.display = "block";
-//     $('.simpleModal p').html('hello');
+//    $('.simpleModal p').html('hello');
 // })
 
 // Listen for closed click
@@ -44,12 +58,9 @@ closeBtn.addEventListener("click", function () {
     modal.style.display = "none";
 })
 
-function idCat () {
-    panelClick.parentElement.nodeName
-    console.log(idCat)
-}
-
-
+// $('.points').on('click', function(){
+//     console.log($('.points').parent().attr('class'))
+// })
 
 $(document).ready(function () {
     // $('.simpleModal p').click(function() {
