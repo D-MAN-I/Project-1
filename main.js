@@ -14,18 +14,22 @@
 
 let panelDetect = document.querySelectorAll(".points")
 console.log(panelDetect)
-this.addEventListener('click', function (event) {
 
 
-    let panelClick = event.target.id
+
+    
 
     
         $( ".points" ).click(function(event) {
-            var target = $(event.target);
+            let panelClick = event.target.id
+            let target = $(event.target);
             if ( target.is( ".points" ) ) {
             let pClassCat = target.parent().attr('class');
-            let row = panelClick.charAt(1)
-            let col = panelClick.charAt(3)
+            let row = panelClick.charAt(1) - 1
+            let col = panelClick.charAt(3) - 1
+            $('.simpleModal .ans').html(categoryObj[pClassCat].answers[row]);
+            $('.simpleModal .qR').html('What is (submit your response) ' + categoryObj[pClassCat].questionResponses[row] + ' ?');
+            modal.style.display = "block";
             console.log(pClassCat)
 
             console.log(panelClick)
@@ -39,7 +43,7 @@ this.addEventListener('click', function (event) {
           })
     
     
-})
+
 
 
 
@@ -71,11 +75,10 @@ closeBtn.addEventListener("click", function () {
 
 $(document).ready(function () {
     // $('.simpleModal p').click(function() {
-    div.addEventListener("click", function () {
-        modal.style.display = "block";
-        $('.simpleModal .ans').html(categoryObj.cat1.answers[0]);
-        $('.simpleModal .qR').html('What is ' + categoryObj.cat1.questionResponses[0] + ' ?');
-    })
+    // div.addEventListener("click", function () {
+        // modal.style.display = "block";
+        
+    // })
 
 
     // $('cat1').click(function () {})

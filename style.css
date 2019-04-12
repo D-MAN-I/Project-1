@@ -170,3 +170,7 @@ h1 {
 .button:hover {
     background: darkgreen;
 }
+
+input {
+    width: 70%;
+}
