@@ -86,7 +86,7 @@ h1 {
     color: white;
 }
 
-.Cat1 > div{
+.cat1 > div{
     height: 100px;
     width: 170px;
     border: solid rgb(167, 35, 26) 3px;
@@ -97,7 +97,7 @@ h1 {
     align-items: center;
 }
 
-.Cat2 > div{
+.cat2 > div{
     height: 100px;
     width: 170px;
     border: solid rgb(167, 35, 26) 3px;
@@ -107,7 +107,7 @@ h1 {
     justify-content: center;
     align-items: center;
 }
-.Cat3 > div{
+.cat3 > div{
     height: 100px;
     width: 170px;
     border: solid rgb(167, 35, 26) 3px;
@@ -117,7 +117,7 @@ h1 {
     justify-content: center;
     align-items: center;
 }
-.Cat4 > div{
+.cat4 > div{
     height: 100px;
     width: 170px;
     border: solid rgb(167, 35, 26) 3px;
@@ -127,7 +127,7 @@ h1 {
     justify-content: center;
     align-items: center;
 }
-.Cat5 > div{
+.cat5 > div{
     height: 100px;
     width: 170px;
     border: solid rgb(167, 35, 26) 3px;
@@ -139,7 +139,7 @@ h1 {
     
 }
 
-.FJ {
+.fj {
     height: 94px;
     width: 874px;
     border: solid rgb(167, 35, 26) 3px;

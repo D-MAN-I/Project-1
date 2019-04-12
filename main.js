@@ -23,10 +23,17 @@ this.addEventListener('click', function (event) {
         $( ".points" ).click(function(event) {
             var target = $(event.target);
             if ( target.is( ".points" ) ) {
-            let pClass = target.parent().attr('class');
-            console.log(pClass)
+            let pClassCat = target.parent().attr('class');
+            let row = panelClick.charAt(1)
+            let col = panelClick.charAt(3)
+            console.log(pClassCat)
 
             console.log(panelClick)
+
+            console.log(categoryObj[pClassCat])
+
+            console.log(row)
+            console.log(col)
             }
             
           })
@@ -84,7 +91,7 @@ $(document).ready(function () {
 //console.log(document.querySelectorAll("points")[0])
 
 //The 'data structure' would include multiple arrays containing [answers], [questionResponses], and [pointValues] (amongst others TBD)
-let categoryObj = {
+const categoryObj = {
     cat1: {
         answers: ['a', 'b', 'c', 'd', 'e'],
         questionResponses: ['f', 'g', 'h', 'i', 'j'],
