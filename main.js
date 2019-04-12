@@ -44,6 +44,12 @@ closeBtn.addEventListener("click", function () {
     modal.style.display = "none";
 })
 
+function idCat () {
+    panelClick.parentElement.nodeName
+    console.log(idCat)
+}
+
+
 
 $(document).ready(function () {
     // $('.simpleModal p').click(function() {
