@@ -14,27 +14,59 @@
 
 let panelDetect = document.querySelectorAll(".points")
 console.log(panelDetect)
-this.addEventListener('click', function(event) {
-    
+this.addEventListener('click', function (event) {
+
 
     let panelClick = event.target.id
-    
+
     console.log(panelClick)
 })
 
-// let modal = document.querySelector('.modal')
-// let div = document.querySelectorAll('.points')[0]
+// Get modal element
+let modal = document.querySelector('.simpleModal')
 
+// Get open modal button
+// let modalBtn = document.querySelector('.modalBtn')
 
+// Get close button
+let closeBtn = document.getElementsByClassName('closeBtn')[0]
+
+let div = document.querySelectorAll('.points')[0]
+
+// Listen for open click
 // div.addEventListener("click", function() {
-//     console.log("inside modal")
 //     modal.style.display = "block";
+//     $('.simpleModal p').html('hello');
 // })
 
+// Listen for closed click
+closeBtn.addEventListener("click", function () {
+    modal.style.display = "none";
+})
+
+
+$(document).ready(function () {
+    // $('.simpleModal p').click(function() {
+    div.addEventListener("click", function () {
+        modal.style.display = "block";
+        $('.simpleModal .ans').html(categoryObj.cat1.answers[0]);
+        $('.simpleModal .qR').html('What is ' + categoryObj.cat1.questionResponses[0] + ' ?');
+    })
+
+
+    // $('cat1').click(function () {})
+    // for (i = 0; i < categoryObj.cat1.length; i++) {
+            
+    //         console.log(categoryObj.cat1)
+
+    });
+    
+
+// });
 
 //console.log(document.querySelectorAll("points")[0])
 
- //The 'data structure' would include multiple arrays containing [answers], [questionResponses], and [pointValues] (amongst others TBD)
+//The 'data structure' would include multiple arrays containing [answers], [questionResponses], and [pointValues] (amongst others TBD)
 let categoryObj = {
     cat1: {
         answers: ['a', 'b', 'c', 'd', 'e'],
@@ -66,7 +98,8 @@ let categoryObj = {
         pointValues: [100, 200, 300, 400, 500]
     }
 }
- 
+
+
 
  //Then, user will need to 'input' a question-response.
 
@@ -78,8 +111,8 @@ let categoryObj = {
 
  //This process of selecting panels by Cat-Pts continues until no panels remain on the board.  At this point, the users total accumulated pts are evaluated for Final Jeopardy entry.
  //If total pts are > 0, go to final jeopardy automatically. If <= to zero, player loses (unable to proceed to final jeopardy).
- 
+
  //Final jeopardy (FJ) category will be fixed (players won't be able to choose it). Players may bet amounts up to the value of their accumulated total pts balance.
  //The user will be prompted for his/her bet amount.  An FJ answer will be provided consistent with the category, the user will be prompted to input a question-response.
  //This response will be evaluated. If correct, the bet amt will be awarded by adding it to the total score.  If incorrect, the bet amt will be deducted from the total score.  
- //If at this point in FJ, the player still has positive pts he/she will win.  If negative total pts balance after FJ question-response evaluation, player loses.   
+ //If at this point in FJ, the player still has positive pts he/she will win.  If negative total pts balance after FJ question-response evaluation, player loses.  

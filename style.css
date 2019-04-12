@@ -5,15 +5,15 @@ body {
 }
 
 .simpleModal {
-    /* display: none; */
+    display: none;
     position: fixed;
     z-index: 1;
-    /* left: 0;
-    top: 0; */
-    height: 727px;
-    width: 880px;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
     /* overflow: auto; */
-    background-color: blue;
+    background-color: yellow;
     margin: auto;
     justify-content: center;
     align-items: baseline;
@@ -21,9 +21,9 @@ body {
 
 .modal-content {
     background-color:blue;
-    margin: 20% auto;
+    margin: 10% auto;
     padding: 20px;
-    height: 50%;
+    height: 66%;
     width: 85%;
     font-size: 25px;
     line-height: 5;
