@@ -26,7 +26,8 @@ When a player comes to the site...
 
 ## Wireframe
 
-![Wireframe] (wireframe-jeopardy-game.png)
+![Image](wireframe-jeopardy-game.png)
+
 
 ## Game Details
 
