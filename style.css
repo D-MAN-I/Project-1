@@ -1,23 +1,63 @@
-/* body {
-    
-} */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    line-height: 1.6; 
+}
+
+.simpleModal {
+    /* display: none; */
+    position: fixed;
+    z-index: 1;
+    /* left: 0;
+    top: 0; */
+    height: 727px;
+    width: 880px;
+    /* overflow: auto; */
+    background-color: blue;
+    margin: auto;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.modal-content {
+    background-color:blue;
+    margin: 20% auto;
+    padding: 20px;
+    height: 50%;
+    width: 85%;
+    font-size: 25px;
+    line-height: 5;
+    color:white;
+
+}
+
+.closeBtn {
+    color: #ccc;
+    float: right;
+    top: right;
+    font-size: 30px;
+}
+
+.closeBtn:hover, .closeBtn:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 h1 {
     text-align: center;
-    
-
 }
 
 #gameboard {
     background-color: blue;
     display: flex;  
-    flex-basis: 80vh;
+    /* flex-basis: 80vh; */
     margin: auto;
     height: 627px;
     width: 880px
     
 }
-
+/* 
 .answers {
     background-color: blue;
     display: inline-flex;  
@@ -27,15 +67,13 @@ h1 {
     width: 880px
     
 
-}
+} */
 
 .container
 {
     display: flex;
     justify-content: center;
     align-items: baseline;
-    /* flex-wrap: nowrap; */
-
 }
 .container > div {
     display: flex;
@@ -45,9 +83,7 @@ h1 {
     width: 170px;
     background-color: grey;
     border: solid rgba(255, 255, 0, 0.885) 3px;
-    /* text-align: center; */
     color: white;
-    
 }
 
 .Cat1 > div{
@@ -112,11 +148,6 @@ h1 {
     top: 666px;
     left: 35px;
     margin: auto;
-    /* display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center; */
-
 }
 
 .points {
@@ -127,4 +158,15 @@ h1 {
 
 .points:hover {
     color: gold;
+}
+
+.button {
+    background: yellow;
+    padding: 1em 2em;
+    color: black;
+    border: 0;
+}
+
+.button:hover {
+    background: darkgreen;
 }

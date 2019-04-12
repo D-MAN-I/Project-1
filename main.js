@@ -1,4 +1,3 @@
-console.log("Hello World")
 //To play Jeopardy game  answers need to be paired with question responses.
 //Points (or money) accumulate based on correct question-responses (i.e., answers in the form of a question).
 
@@ -16,13 +15,24 @@ console.log("Hello World")
 let panelDetect = document.querySelectorAll(".points")
 console.log(panelDetect)
 this.addEventListener('click', function(event) {
+    
 
     let panelClick = event.target.id
     
+    console.log(panelClick)
 })
 
+// let modal = document.querySelector('.modal')
+// let div = document.querySelectorAll('.points')[0]
 
-// console.log(document.getElementsByClassName("points")[0])
+
+// div.addEventListener("click", function() {
+//     console.log("inside modal")
+//     modal.style.display = "block";
+// })
+
+
+//console.log(document.querySelectorAll("points")[0])
 
  //The 'data structure' would include multiple arrays containing [answers], [questionResponses], and [pointValues] (amongst others TBD)
 let categoryObj = {
