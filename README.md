@@ -1,19 +1,21 @@
-
 # Project-1: The Jeopardy Game
+
+
 ## Overview 
 
-For project #1, I opted to undertake the Jeopardy game.  I created a simplified, single-player version of this well known TV gameshow.
+For the student's first coding *'project'* experience, I opted to undertake the Jeopardy game.  I created a basic, single-player version of the popular TV gameshow.
 
-When a player comes to the site, my hope is that the gamer finds a fun-filled, intuitive user experience.
+When a player comes to the site, my hope is for the gamer to find a fun-filled, intuitive user experience.
 
 **Live site:** <https://d-man-i.github.io/Project-1/>
+
 
 ## Technologies Used
 
 * Languages - HTML5, CSS3, Javascript (along with the JQuery library)
-* Design using methods taught during initial weeks of GA's SEI 21 program 
+* Designed utilizing methodologies learned during initial weeks of GA's SEI 21 program 
 * Project Planning & User Stories - [Trello](https://trello.com/invite/b/0tyWvH8L/a26ae8c77899c5466f494032c7c4198b/ga-sei-21-project-1)
-* Visual Studio Code v.1.33.0
+* (Code) Text Editor - Visual Studio Code v.1.33.0
 
 
 ## Features
@@ -21,8 +23,7 @@ When a player comes to the site, my hope is that the gamer finds a fun-filled, i
 * Gameboard (25 panels, 5 topical catigories with different point value attributes)
 * Continuous scoring of points earned or deducted
 * Intuitive, easy to use interface
-* Occupies gametime an average of 10 - 15 minutes per game
-
+* Occupies your gametime environment an average of 10 - 15 minutes per game
 
 ## Wireframe
 
