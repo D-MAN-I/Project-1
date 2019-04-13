@@ -165,6 +165,9 @@ h1 {
     padding: 1em 2em;
     color: black;
     border: 0;
+    height: 11.5%;
+    font-size: 12px;
+
 }
 
 .button:hover {
@@ -173,4 +176,6 @@ h1 {
 
 input {
     width: 70%;
+    height: 10%;
+    font-size: 20px;
 }

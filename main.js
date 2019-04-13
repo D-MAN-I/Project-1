@@ -15,8 +15,7 @@
 let panelDetect = document.querySelectorAll(".points")
 console.log(panelDetect)
 
-
-
+var totalScore = 0
     
 
     
@@ -27,9 +26,26 @@ console.log(panelDetect)
             let pClassCat = target.parent().attr('class');
             let row = panelClick.charAt(1) - 1
             let col = panelClick.charAt(3) - 1
+            let quesResp = categoryObj[pClassCat].questionResponses[row]
             $('.simpleModal .ans').html(categoryObj[pClassCat].answers[row]);
-            $('.simpleModal .qR').html('What is (submit your response) ' + categoryObj[pClassCat].questionResponses[row] + ' ?');
+            $('.simpleModal .qR').html('What is...(submit your response) ?');
             modal.style.display = "block";
+            $('#modalBtn').click(function() {
+                let inputText = $('#resp').val()
+                if (inputText === quesResp) {
+
+                    totalScore = Number(categoryObj[pClassCat].pointValues[row]) + totalScore
+
+                } else {
+
+                    totalScore = totalScore - Number(categoryObj[pClassCat].pointValues[row])
+                }
+                
+                console.log(totalScore)
+                console.log(inputText)
+            })
+            
+            
             console.log(pClassCat)
 
             console.log(panelClick)
