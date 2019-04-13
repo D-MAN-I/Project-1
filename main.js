@@ -4,8 +4,7 @@
 /*Category locations on gameboard are fixed. Knowing the category location (i.e., Cat1 - Cat5) and point value (100 - 500)
  will indicate location on the board (i.e, row and column).  For example row 2 column 2 is same as Cat2, 200 pts.*/
 
-//When user or player clicks (for example) the panal for Cat1-100pts, the gameboard should disappear and an answer related to the category should appear.
-
+//When user or player clicks (for example) the panel for Cat1-100pts, the gameboard should disappear and an answer related to the category should appear.
 
 //step 1
 //let panelDetect = document.getElementsByClassName("points")
@@ -17,18 +16,19 @@ console.log(panelDetect)
 
 var totalScore = 0
 var numTurns = 0
-    
-
-    
+        
         $( ".points" ).click(function(event) {
             $('#resp').val('')
-
+// Provides the 'unique identifier' associated with each panel on the gameboard
             let panelClick = event.target.id
+// Get the category number (i.e., cat1, cat2, cat3...)            
             let target = $(event.target);
             if ( target.is( ".points" ) ) {
             let pClassCat = target.parent().attr('class');
+// Find - convert - calculate index number for data arrays            
             let row = panelClick.charAt(1) - 1
             let col = panelClick.charAt(3) - 1
+//Set variable for qRs array elements so they can be compared to user submitted responses             
             let quesResp = categoryObj[pClassCat].questionResponses[row]
             $('.simpleModal .ans').html(categoryObj[pClassCat].answers[row]);
             $('.simpleModal .qR').html('What is...(submit your response) ?');
@@ -44,7 +44,7 @@ var numTurns = 0
 
                     totalScore = totalScore - Number(categoryObj[pClassCat].pointValues[row])
                 }
-                //disable panel click and removes points panel
+                //disable panel click and removes points shown in panel
                 $('#scoreboard').html('Your score is: ' + totalScore + " points")
                 $(event.target).removeClass('points')
                 $(event.target).html('')
@@ -60,24 +60,15 @@ var numTurns = 0
                 console.log(inputText)
             })
             
-            
             console.log(pClassCat)
-
             console.log(panelClick)
-
             console.log(categoryObj[pClassCat])
-
             console.log(row)
             console.log(col)
             }
             
           })
     
-    
-
-
-
-
 // Get modal element
 let modal = document.querySelector('.simpleModal')
 
@@ -120,11 +111,9 @@ $(document).ready(function () {
     });
     
 
-// });
+//The 'data structure' includes multiple arrays containing [answers], [questionResponses], and [pointValues] (~ vertical arrays)
 
-//console.log(document.querySelectorAll("points")[0])
 
-//The 'data structure' would include multiple arrays containing [answers], [questionResponses], and [pointValues] (amongst others TBD)
 const categoryObj = {
     cat1: {
         answers: ['a', 'b', 'c', 'd', 'e'],
@@ -157,8 +146,6 @@ const categoryObj = {
     }
 }
 
-
-
  //Then, user will need to 'input' a question-response.
 
  //A 'function' will need to evaluate the player's question-responses for correctness.
@@ -167,10 +154,7 @@ const categoryObj = {
 
 //After each instance (either correct or incorrect question-response evaluation) the curremt Cat-Pt panel will disappear from the gameboard (so that it cannot be re-selected), 
 
- //This process of selecting panels by Cat-Pts continues until no panels remain on the board.  At this point, the users total accumulated pts are evaluated for Final Jeopardy entry.
- //If total pts are > 0, go to final jeopardy automatically. If <= to zero, player loses (unable to proceed to final jeopardy).
+ //This process of selecting panels by Cat-Pts continues until no panels remain on the board.  At this point (after answering 25 questions), the users total accumulated pts are evaluated as a final score.
+ //If total pts are > 0, player wins. 
 
- //Final jeopardy (FJ) category will be fixed (players won't be able to choose it). Players may bet amounts up to the value of their accumulated total pts balance.
- //The user will be prompted for his/her bet amount.  An FJ answer will be provided consistent with the category, the user will be prompted to input a question-response.
- //This response will be evaluated. If correct, the bet amt will be awarded by adding it to the total score.  If incorrect, the bet amt will be deducted from the total score.  
- //If at this point in FJ, the player still has positive pts he/she will win.  If negative total pts balance after FJ question-response evaluation, player loses.  
+ // If negative total pts balance after playing all panels, player loses (sorry, try again).  
