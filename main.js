@@ -49,8 +49,10 @@ var numTurns = 0
                 $(event.target).removeClass('points')
                 $(event.target).html('')
                 numTurns++
-                if(numTurns===4) {
+                if(numTurns===4 && totalScore > 0) {
                     alert('You Win')
+                } else if (numTurns === 4 && totalScore <= 0) {
+                    alert('Sorry, try again (refresh page)')
                 } 
                 //removed click handler for scoring accuracy
                 $('#modalBtn').off()
