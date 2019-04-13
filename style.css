@@ -57,6 +57,16 @@ h1 {
     width: 880px
     
 }
+
+#scoreboard {
+    display: fixed;
+    top:800px;
+    left:5px;
+    color: blue;
+    border: solid black 3px;
+    border-color: grey;
+}
+
 /* 
 .answers {
     background-color: blue;

@@ -16,10 +16,13 @@ let panelDetect = document.querySelectorAll(".points")
 console.log(panelDetect)
 
 var totalScore = 0
+var numTurns = 0
     
 
     
         $( ".points" ).click(function(event) {
+            $('#resp').val('')
+
             let panelClick = event.target.id
             let target = $(event.target);
             if ( target.is( ".points" ) ) {
@@ -32,6 +35,7 @@ var totalScore = 0
             modal.style.display = "block";
             $('#modalBtn').click(function() {
                 let inputText = $('#resp').val()
+                console.log("input text: " + inputText)
                 if (inputText === quesResp) {
 
                     totalScore = Number(categoryObj[pClassCat].pointValues[row]) + totalScore
@@ -40,7 +44,16 @@ var totalScore = 0
 
                     totalScore = totalScore - Number(categoryObj[pClassCat].pointValues[row])
                 }
-                
+                //disable panel click and removes points panel
+                $('#scoreboard').html('Your score is: ' + totalScore + " points")
+                $(event.target).removeClass('points')
+                $(event.target).html('')
+                numTurns++
+                if(numTurns===4) {
+                    alert('You Win')
+                } 
+                //removed click handler for scoring accuracy
+                $('#modalBtn').off()
                 console.log(totalScore)
                 console.log(inputText)
             })
