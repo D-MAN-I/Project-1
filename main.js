@@ -1,15 +1,17 @@
 //To play Jeopardy game  answers need to be paired with question responses.
-//Points (or money) accumulate based on correct question-responses (i.e., answers in the form of a question).
 
-/*Category locations on gameboard are fixed. Knowing the category location (i.e., Cat1 - Cat5) and point value (100 - 500)
- will indicate location on the board (i.e, row and column).  For example row 2 column 2 is same as Cat2, 200 pts.*/
+//Points accumulate based on correct question-responses (i.e., answers in the form of a question).
 
-//When user or player clicks (for example) the panel for Cat1-100pts, the gameboard should disappear and an answer related to the category should appear.
+/*Note that 'Category Locations' on gameboard are fixed. Knowing location played on gameboard (i.e., Cat1 - Cat5) and its point value (100 - 500)
+ is the same as knowing row and column numbers.  For example row 2:column 2 is Cat2:200 pts.*/
 
-//step 1
-//let panelDetect = document.getElementsByClassName("points")
+//When user or player first clicks (for example) the panel for Cat1-100pts, the gameboard should disappear and an answer related to the category should appear.
 
-//step 2 - event listener, add click button to each square on the board
+//Then, user will need to 'input' a question-response.
+
+//If the answer is correct pts are awarded.  If incorrect pts are deducted.  (Negative point balances are allowed.)  Accumulated pts must be tracked throughout the course of the game.
+
+//After each instance (either correct or incorrect question-response evaluation) the current Cat-Pt panel will disappear from the gameboard (so that it cannot be re-selected), 
 
 let panelDetect = document.querySelectorAll(".points")
 console.log(panelDetect)
@@ -19,7 +21,7 @@ var numTurns = 0
         
         $( ".points" ).click(function(event) {
             $('#resp').val('')
-// Provides the 'unique identifier' associated with each panel on the gameboard
+// Provides the 'unique identifier' associated with each panel on the gameboard. Event listener on click into each gameboard panel
             let panelClick = event.target.id
 // Get the category number (i.e., cat1, cat2, cat3...)            
             let target = $(event.target);
@@ -28,11 +30,12 @@ var numTurns = 0
 // Find - convert - calculate index number for data arrays            
             let row = panelClick.charAt(1) - 1
             let col = panelClick.charAt(3) - 1
-//Set variable for qRs array elements so they can be compared to user submitted responses             
+//Set a variable for qRs array elements so they can be compared to user submitted responses             
             let quesResp = categoryObj[pClassCat].questionResponses[row]
             $('.simpleModal .ans').html(categoryObj[pClassCat].answers[row]);
             $('.simpleModal .qR').html('What is...(submit your response) ?');
             modal.style.display = "block";
+//Function to evaluates player's question-responses for correctness.
             $('#modalBtn').click(function() {
                 let inputText = $('#resp').val()
                 console.log("input text: " + inputText)
@@ -44,17 +47,23 @@ var numTurns = 0
 
                     totalScore = totalScore - Number(categoryObj[pClassCat].pointValues[row])
                 }
-                //disable panel click and removes points shown in panel
+//Disable panel click and remove points shown in panel. This process of selecting Cat-Pts panels continues until none are active on the board.
                 $('#scoreboard').html('Your score is: ' + totalScore + " points")
                 $(event.target).removeClass('points')
                 $(event.target).html('')
                 numTurns++
-                if(numTurns===4 && totalScore > 0) {
+
+//At this point (after answering 25 questions), the users total accumulated pts are evaluated as a final score.
+// If total pts are > 0, player wins. 
+
+                if(numTurns===25 && totalScore > 0) {
                     alert('You Win')
-                } else if (numTurns === 4 && totalScore <= 0) {
+
+//If negative total pts balance after playing all panels, player loses (sorry, try again). 
+                } else if (numTurns === 25 && totalScore <= 0) {
                     alert('Sorry, try again (refresh page)')
                 } 
-                //removed click handler for scoring accuracy
+                //removes click handler for scoring accuracy
                 $('#modalBtn').off()
                 console.log(totalScore)
                 console.log(inputText)
@@ -146,15 +155,4 @@ const categoryObj = {
     }
 }
 
- //Then, user will need to 'input' a question-response.
-
- //A 'function' will need to evaluate the player's question-responses for correctness.
-
- //If the answer is correct pts are awarded.  If incorrect pts are deducted.  (Negative point balances are allowed.)  Accumulated pts must be tracked throughout the course of the game.
-
-//After each instance (either correct or incorrect question-response evaluation) the curremt Cat-Pt panel will disappear from the gameboard (so that it cannot be re-selected), 
-
- //This process of selecting panels by Cat-Pts continues until no panels remain on the board.  At this point (after answering 25 questions), the users total accumulated pts are evaluated as a final score.
- //If total pts are > 0, player wins. 
-
- // If negative total pts balance after playing all panels, player loses (sorry, try again).  
+  
