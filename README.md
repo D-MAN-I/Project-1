@@ -28,6 +28,12 @@ When a player comes to the site, my hope is for the gamer to find a fun-filled, 
 ## Wireframe
 
 ![Image](wireframe-jeopardy-game.png)
+![Image](wireframe_pg2.png)
+
+
+## Whiteboard 
+
+![Image](jeopardy-whiteboard.png)
 
 
 ## Game Details
