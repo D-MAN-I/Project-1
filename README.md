@@ -46,7 +46,6 @@ The basic data structure has been organized into a nested categoryObject.  Each 
 
 ## Future Development
 
-* Add note instructing the user to click the modal contents' *closeBtn* after each panel response has been submitted 
 * Creat additional modals timed to appear when user submits either 1): a correct answer: or, 2): when the a wrong answer
 * Add capability provides up to 3 simultaneous players
 * Include both second and final jeopardy rounds to this MVP version. 

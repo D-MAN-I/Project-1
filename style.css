@@ -39,10 +39,11 @@ h2 {
 }
 
 .closeBtn {
-    color: #ccc;
+    color:grey;
     float: right;
     top: right;
-    font-size: 30px;
+    font-size: 20px;
+    padding: 5px;
 }
 
 .closeBtn:hover, .closeBtn:focus {
