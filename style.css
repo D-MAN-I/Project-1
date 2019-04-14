@@ -1,9 +1,14 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
-    line-height: 1.6; 
+    line-height: 1.6;
+    color: blue; 
 }
 
+h2 {
+    font-size: 40px;
+    text-align: center;
+}
 .simpleModal {
     display: none;
     position: fixed;
@@ -13,10 +18,12 @@ body {
     height: 100%;
     width: 100%;
     /* overflow: auto; */
-    background-color: yellow;
+    background-color:rgb(167, 35, 26);
     margin: auto;
     justify-content: center;
     align-items: baseline;
+    text-align: justify;
+    
 }
 
 .modal-content {
@@ -26,7 +33,7 @@ body {
     height: 66%;
     width: 85%;
     font-size: 25px;
-    line-height: 5;
+    line-height: 1.6;
     color:white;
 
 }
@@ -46,6 +53,7 @@ body {
 
 h1 {
     text-align: center;
+    font-size: 40px;
 }
 
 #gameboard {
@@ -53,7 +61,7 @@ h1 {
     display: flex;  
     /* flex-basis: 80vh; */
     margin: auto;
-    height: 627px;
+    height: 527px;
     width: 880px
     
 }
@@ -65,6 +73,10 @@ h1 {
     color: blue;
     border: solid black 3px;
     border-color: grey;
+    width: 866px;
+    margin: auto;
+    padding: 3px;
+    
 }
 
 /* 
@@ -83,17 +95,19 @@ h1 {
 {
     display: flex;
     justify-content: center;
-    align-items: baseline;
+    align-items: center;
 }
 .container > div {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px;
+    height: 70px;
     width: 170px;
-    background-color: grey;
+    background-color:rgb(167, 35, 26);
     border: solid rgba(255, 255, 0, 0.885) 3px;
     color: white;
+    text-align: center;
+    font-size: 18px;
 }
 
 .cat1 > div{
@@ -171,9 +185,10 @@ h1 {
 }
 
 .button {
-    background: yellow;
+    background: rgb(167, 35, 26);
+    border-color: white;
     padding: 1em 2em;
-    color: black;
+    color: white;
     border: 0;
     height: 11.5%;
     font-size: 12px;
@@ -181,7 +196,7 @@ h1 {
 }
 
 .button:hover {
-    background: darkgreen;
+    background: yellow;
 }
 
 input {
