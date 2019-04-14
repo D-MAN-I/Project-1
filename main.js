@@ -116,32 +116,32 @@ $(document).ready(function () {
 
 const categoryObj = {
     cat1: {
-        answers: ['a', 'b', 'c', 'd', 'e'],
-        questionResponses: ['f', 'g', 'h', 'i', 'j'],
+        answers: ['The Peach State', 'The Big Apple', 'The Orange State', 'Homeland of the Kiwi', 'This U.S. state has adopted the strawberry'],
+        questionResponses: ['Georgia', 'New York City', 'Florida', 'New Zealand', 'Louisiana'],
         pointValues: [100, 200, 300, 400, 500]
     },
 
     cat2: {
-        answers: ['aa', 'bb', 'cc', 'dd', 'ee'],
-        questionResponses: ['ff', 'gg', 'hh', 'ii', 'jj'],
+        answers: ['The 2 main styles of this liquor are Dutch & London Dry', 'This brand has been made at a Lynchburg, TN distillery since 1866', 'The potent potable in a mint julep', 'A 7&7 mixes 7up and this', 'The letters V.O.P. labled on a cognac bottle stand for this'],
+        questionResponses: ['gin', 'Jack Daniels', 'bourbon', 'Seagram\'s 7', 'very old pale'],
         pointValues: [100, 200, 300, 400, 500]
     },
 
     cat3: {
-        answers: ['aaa', 'bbb', 'ccc', 'ddd', 'eee'],
-        questionResponses: ['fff', 'ggg', 'hhh', 'iii', 'jjj'],
+        answers: ['Number of quarts in a gallon', 'Number of dozens in a gross', 'Number of pounds in a ton (T)', 'Number of days in a leap year', 'A square foot has this many square inches'],
+        questionResponses: ['4', '12', '2000', '366', '144'],
         pointValues: [100, 200, 300, 400, 500]
     },
 
     cat4: {
-        answers: ['aaaa', 'bbbb', 'cccc', 'dddd', 'eeee'],
-        questionResponses: ['ffff', 'gggg', 'hhhh', 'iiii', 'jjjj'],
+        answers: ['This capital city is in Florida', 'When Georgia is on your mind, this is its most populus city', 'The home of country music', 'Capital of the Golden State', 'Most north-western U.S. state'],
+        questionResponses: ['Tallahasse', 'Atlanta', 'Nashville', 'Sacramento', 'Juneau'],
         pointValues: [100, 200, 300, 400, 500]
     },
 
     cat5: {
-        answers: ['aaaaa', 'bbbbb', 'ccccc', 'ddddd', 'eeeee'],
-        questionResponses: ['fffff', 'ggggg', 'hhhhh', 'iiiii', 'jjjjj'],
+        answers: ['This tells Git to start monitoring your current folder', 'Lets you determine whether files have been staged', 'Places a file on the stage', 'After staging a file you must do this', 'Creates a new local Git repo copied from a remote one'],
+        questionResponses: ['init', 'status', 'add', 'commit', 'clone'],
         pointValues: [100, 200, 300, 400, 500]
     }
 }

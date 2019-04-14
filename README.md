@@ -47,11 +47,12 @@ The basic data structure has been organized into a nested categoryObject.  Each 
 ## Future Development
 
 * Add note instructing the user to click the modal contents' *closeBtn* after each panel response has been submitted 
-* Creat additional modals timed to appear when user submits either 1): a correct answer: or, when the a wrong answer
-* Add capability that would provide for up to 3 simultaneous players
-* Include second and final jeopardy rounds to this MVP version. Allow players to bid any amount of their existing total points score (similar to how wagers are made on the actual TV gameshow)
-* Add two daily doubles (randomly selected panels)
-* Enable timed user input responses along with pointsValue deductions when timed-out (say 20,000ms) and no *questionResponse* submission 
-* Update gameboard and background styling to appeal to more users
-* Include audio after page loads with the moniker "This is Jeopardy!"
+* Creat additional modals timed to appear when user submits either 1): a correct answer: or, 2): when the a wrong answer
+* Add capability provides up to 3 simultaneous players
+* Include both second and final jeopardy rounds to this MVP version. 
+* Allow players to bid any amount of their existing total points score (similar to how wagers are made on the actual TV gameshow)
+* Add two daily doubles (to randomly selected panels)
+* Enable timed user input of responses along with pointsValue deductions when either timed-out (say 20,000ms) or no *questionResponse* submission 
+* Update gameboard, background & modal styling to appeal to more users
+* Include audio file after page loads with the moniker "This is Jeopardy!"
 * Consider other versions geared to the education of elementary school students.
