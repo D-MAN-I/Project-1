@@ -57,11 +57,11 @@ var numTurns = 0
 // If total pts are > 0, player wins. 
 
                 if(numTurns===25 && totalScore > 0) {
-                    alert('You Win')
+                    prompt('You\'ve Won (enter your name below)')
 
 //If negative total pts balance after playing all panels, player loses (sorry, try again). 
                 } else if (numTurns === 25 && totalScore <= 0) {
-                    alert('Sorry, try again (refresh page)')
+                    prompt('Sorry, try again (enter name below and refresh page)')
                 } 
                 //removes click handler for scoring accuracy
                 $('#modalBtn').off()
