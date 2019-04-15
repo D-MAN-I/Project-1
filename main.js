@@ -37,7 +37,7 @@ var numTurns = 0
             modal.style.display = "block";
 //Function to evaluates player's question-responses for correctness.
             $('#modalBtn').click(function() {
-                let inputText = $('#resp').val()
+                let inputText = $('#resp').val().toLowerCase()
                 console.log("input text: " + inputText)
                 if (inputText === quesResp) {
 
@@ -112,11 +112,6 @@ $(document).ready(function () {
     // })
 
 
-    // $('cat1').click(function () {})
-    // for (i = 0; i < categoryObj.cat1.length; i++) {
-            
-    //         console.log(categoryObj.cat1)
-
     });
     
 
@@ -126,13 +121,13 @@ $(document).ready(function () {
 const categoryObj = {
     cat1: {
         answers: ['The Peach State', 'The Big Apple', 'The Orange State', 'Homeland of the Kiwi', 'This U.S. state has adopted the strawberry'],
-        questionResponses: ['Georgia', 'New York City', 'Florida', 'New Zealand', 'Louisiana'],
+        questionResponses: ['georgia', 'new york city', 'florida', 'new zealand', 'louisiana'],
         pointValues: [100, 200, 300, 400, 500]
     },
 
     cat2: {
         answers: ['The 2 main styles of this liquor are Dutch & London Dry', 'This brand has been made at a Lynchburg, TN distillery since 1866', 'The potent potable in a mint julep', 'A 7&7 mixes 7up and this', 'The letters V.O.P. labled on a cognac bottle stand for this'],
-        questionResponses: ['gin', 'Jack Daniels', 'bourbon', 'Seagram\'s 7', 'very old pale'],
+        questionResponses: ['gin', 'jack daniels', 'bourbon', 'seagram\'s 7', 'very old pale'],
         pointValues: [100, 200, 300, 400, 500]
     },
 
@@ -144,7 +139,7 @@ const categoryObj = {
 
     cat4: {
         answers: ['This capital city is in Florida', 'When Georgia is on your mind, this is its most populus city', 'The home of country music', 'Capital of the Golden State', 'Most north-western U.S. state'],
-        questionResponses: ['Tallahasse', 'Atlanta', 'Nashville', 'Sacramento', 'Juneau'],
+        questionResponses: ['tallahasse', 'atlanta', 'nashville', 'sacramento', 'juneau'],
         pointValues: [100, 200, 300, 400, 500]
     },
 
