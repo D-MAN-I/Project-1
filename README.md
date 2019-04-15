@@ -3,7 +3,7 @@
 
 ## Overview 
 
-For the student's first coding *'project'* experience, I opted to undertake the Jeopardy game.  I created a basic, single-player version of the popular TV gameshow.
+For this student's first coding *'project'* experience, I opted to undertake the Jeopardy game.  I created a basic, single-player version of the popular TV gameshow.
 
 When a player comes to the site, my hope is for the gamer to find a fun-filled, intuitive user experience.
 

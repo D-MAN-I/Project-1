@@ -33,7 +33,7 @@ var numTurns = 0
 //Set a variable for qRs array elements so they can be compared to user submitted responses             
             let quesResp = categoryObj[pClassCat].questionResponses[row]
             $('.simpleModal .ans').html(categoryObj[pClassCat].answers[row]);
-            $('.simpleModal .qR').html('What is...(submit your response) ?');
+            $('.simpleModal .qR').html('What is...(submit your response below) ?');
             modal.style.display = "block";
 //Function to evaluates player's question-responses for correctness.
             $('#modalBtn').click(function() {
@@ -100,23 +100,15 @@ closeBtn.addEventListener("click", function () {
     modal.style.display = "none";
 })
 
-// $('.points').on('click', function(){
-//     console.log($('.points').parent().attr('class'))
-// })
-
 $(document).ready(function () {
     // $('.simpleModal p').click(function() {
     // div.addEventListener("click", function () {
         // modal.style.display = "block";
         
     // })
-
-
     });
     
-
 //The 'data structure' includes multiple arrays containing [answers], [questionResponses], and [pointValues] (~ vertical arrays)
-
 
 const categoryObj = {
     cat1: {

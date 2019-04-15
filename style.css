@@ -6,7 +6,9 @@ body {
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 50px;
+    padding: 0px;
+    margin: 0%;
     text-align: center;
 }
 .simpleModal {
@@ -18,7 +20,7 @@ h2 {
     height: 100%;
     width: 100%;
     /* overflow: auto; */
-    background-color:rgb(167, 35, 26);
+    background-color: rgba(255, 38, 0, 0.995);
     margin: auto;
     justify-content: center;
     align-items: baseline;
@@ -28,10 +30,10 @@ h2 {
 
 .modal-content {
     background-color:blue;
-    margin: 10% auto;
-    padding: 20px;
-    height: 66%;
-    width: 85%;
+    margin: 5% auto;
+    padding: 5px;
+    height: 50%;
+    width: 70%;
     font-size: 25px;
     line-height: 1.6;
     color:white;
@@ -54,7 +56,9 @@ h2 {
 
 h1 {
     text-align: center;
-    font-size: 40px;
+    font-size: 50px;
+    padding: 0px;
+    margin: 0%;
 }
 
 #gameboard {
@@ -72,8 +76,9 @@ h1 {
     top:800px;
     left:5px;
     color: blue;
-    border: solid black 3px;
-    border-color: grey;
+    font-size: 20px;
+    /* border: solid 3px; */
+    /* border-color: grey; */
     width: 866px;
     margin: auto;
     padding: 3px;
@@ -104,8 +109,9 @@ h1 {
     align-items: center;
     height: 70px;
     width: 170px;
-    background-color:rgb(167, 35, 26);
-    border: solid rgba(255, 255, 0, 0.885) 3px;
+    background-color:rgba(255, 38, 0, 0.995);
+    border: solid rgba(255, 255, 0, 1.0) 3px;
+    border-top: solid rgba(255, 255, 0, 1.0) 5px;
     color: white;
     text-align: center;
     font-size: 18px;
@@ -114,7 +120,7 @@ h1 {
 .cat1 > div{
     height: 100px;
     width: 170px;
-    border: solid rgb(167, 35, 26) 3px;
+    border: solid rgba(255, 68, 0, 0.933) 3px;
     text-align: center;
     color: white;
     display: flex;
@@ -125,7 +131,7 @@ h1 {
 .cat2 > div{
     height: 100px;
     width: 170px;
-    border: solid rgb(167, 35, 26) 3px;
+    border: solid rgba(255, 68, 0, 0.933) 3px;
     text-align: center;
     color: white;
     display: flex;
@@ -135,7 +141,7 @@ h1 {
 .cat3 > div{
     height: 100px;
     width: 170px;
-    border: solid rgb(167, 35, 26) 3px;
+    border: solid rgba(255, 68, 0, 0.933) 3px;
     text-align: center;
     color: white;
     display: flex;
@@ -145,7 +151,7 @@ h1 {
 .cat4 > div{
     height: 100px;
     width: 170px;
-    border: solid rgb(167, 35, 26) 3px;
+    border: solid rgba(255, 68, 0, 0.933) 3px;
     text-align: center;
     color: white;
     display: flex;
@@ -155,7 +161,7 @@ h1 {
 .cat5 > div{
     height: 100px;
     width: 170px;
-    border: solid rgb(167, 35, 26) 3px;
+    border: solid rgba(255, 68, 0, 0.933) 3px;
     text-align: center;
     color: white;
     display: flex;
@@ -186,7 +192,7 @@ h1 {
 }
 
 .button {
-    background: rgb(167, 35, 26);
+    background: rgba(255, 68, 0, 0.933);
     border-color: white;
     padding: 1em 2em;
     color: white;
