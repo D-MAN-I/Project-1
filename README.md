@@ -7,7 +7,7 @@ For this student's first coding *'project'* experience, I opted to undertake the
 
 When a player comes to the site, my hope is for the gamer to find a fun-filled, intuitive user experience.
 
-**Live site:** <https://d-man-i.github.io/Project-1/>
+**Live site:** <https://edwardsdamian.github.io/Project-1/>
 
 
 ## Technologies Used
